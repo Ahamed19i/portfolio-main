@@ -1,6 +1,7 @@
 
+
 import Title from "./Title";
-import { Link } from "react-router-dom"; // 🔹 Import Link pour navigation
+import { Link } from "react-router-dom";
 
 import img1 from '../assets/projects/p1.webp';
 import img2 from '../assets/projects/p2.webp';
@@ -72,8 +73,7 @@ const Projects = () => {
             <Title title="Mes Projets" />
             <div className="grid md:grid-cols-3 gap-4">
                 {projects.map((project) => (
-                    <Link
-                        to={`/project/${project.id}`} // 🔹 Route vers la page détail
+                    <div
                         key={project.id}
                         className="block bg-base-300 p-5 h-fit rounded-xl shadow-lg hover:shadow-xl transition"
                     >
@@ -91,7 +91,15 @@ const Projects = () => {
                                 <span key={tech} className="badge badge-accent badge-sm">{tech}</span>
                             ))}
                         </div>
-                    </Link>
+
+                        {/* ✅ Bouton affiché pour tous les projets */}
+                        <Link
+                            to={`/project/${project.id}`}
+                            className="btn btn-primary btn-sm mt-2"
+                        >
+                            Voir plus
+                        </Link>
+                    </div>
                 ))}
             </div>
         </div>
