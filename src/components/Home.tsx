@@ -16,7 +16,7 @@ const Home = () => {
                     <strong> AFI Dakar</strong>.  
                     Passionné par la gestion des infrastructures informatiques, <br />la cybersécurité et 
                     l’optimisation des performances réseau.  
-                    Mon objectif est de mettre <br /> mes compétences au service d’organisations innovantes <br />et exigeantes.
+                    Mon objectif est de mettre <br /> mes compétences au service d’organisations innovantes et exigeantes.
                 </p>
                 <a href="mailto:contact@ahamedhassani.com?subject=Demande%20de%20contact&body=Bonjour%20Ahamed,%0AJe%20souhaite%20prendre%20contact%20avec%20vous..." 
                     className="btn btn-accent md:w-fit">
