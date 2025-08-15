@@ -1,6 +1,6 @@
 
-import Title from "./Title"
-import img from '../assets/propos.jpg'
+import Title from "./Title";
+import img from '../assets/propos.jpg';
 import { CalendarSync, LetterText, Paintbrush } from "lucide-react";
 
 const aboutSections = [
@@ -28,22 +28,28 @@ const About = () => {
     return (
         <div className="bg-base-300 p-10 mb-10 md:mb-32" id="About">
             <Title title="À propos" />
-            <div className="md:h-screen flex justify-center items-center ">
-                <div className="hidden md:block">
-                    <img src={img} alt="" className=" w-96 object-cover rounded-xl"
+            <div className="md:h-screen flex flex-col md:flex-row justify-center items-center gap-6">
+                
+                {/* ✅ Affiche la photo aussi sur mobile */}
+                <div className="flex justify-center">
+                    <img
+                        src={img}
+                        alt="À propos"
+                        className="w-60 h-auto md:w-96 object-cover rounded-xl"
                     />
                 </div>
 
-                <div className="md:ml-4 space-y-4">
+                <div className="space-y-4">
                     {aboutSections.map((section) => (
-                        <div key={section.id}
+                        <div
+                            key={section.id}
                             className="flex flex-col md:flex-row items-center bg-base-100 p-5 rounded-xl md:w-96 shadow-xl"
                         >
                             <div className="mb-2 md:mb-0">
                                 {section.icon}
                             </div>
                             <div className="md:ml-4 text-center md:text-left">
-                                <h2 className="text-xl  font-bold mb-1">
+                                <h2 className="text-xl font-bold mb-1">
                                     {section.title}
                                 </h2>
                                 <p className="text-sm">
@@ -55,7 +61,7 @@ const About = () => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default About
+export default About;
