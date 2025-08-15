@@ -28,12 +28,13 @@ const Home = () => {
             </div>
 
             <div className="md:ml-60">
-                <img
-                    src={img}
-                    alt="Photo de profil"
-                    className="w-72 h-72 md:w-96 md:h-96 border-8 border-accent shadow-xl object-contain md:object-cover"
+                <div
+                    className="w-96 h-96 border-8 border-accent shadow-xl"
                     style={{
-                        borderRadius: "30% 70% 70% 30% / 67% 62% 38% 33%"
+                        borderRadius: "30% 70% 70% 30% / 67% 62% 38% 33%",
+                        backgroundImage: `url(${img})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
                     }}
                 />
             </div>
