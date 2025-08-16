@@ -56,7 +56,7 @@ const experiences = [
         id: 3,
         role: "Projet Personnel – Développeur Fullstack & Administrateur Systèmes",
         company: "Projet Universitaire",
-        period: "En cours",
+        period: "Réalisés",
         description: [
             "Conception et développement complet d’une plateforme de gestion universitaire avec Django et React.",
             "Intégration d’un système de messagerie et calendrier via Microsoft Exchange Server sous Windows Server.",
